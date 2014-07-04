@@ -1,0 +1,241 @@
+/* Настройки
+----------------------------------------------------------- */
+/* Подключение файлов
+----------------------------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  min-width: 1240px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+  color: #000;
+}
+p {
+  font: inherit;
+}
+a {
+  color: inherit;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 8px;
+  zoom: 1;
+}
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.heading--section {
+  margin: 0 0 55px;
+  font: bold 45px 'Trebuchet MS', Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #1b4468;
+  text-align: center;
+}
+.b-advantages {
+  min-height: 474px;
+  padding: 64px 0;
+  background: url("../img/b-advantages.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+.b-advantages__item {
+  display: inline-block;
+  vertical-align: top;
+}
+.b-advantages__item + .b-advantages__item {
+  margin-left: 50px;
+}
+.b-advantages__item__text {
+  font-size: 22px;
+}
+.b-catalog {
+  padding: 65px 0;
+  background: url("../img/b-catalog.jpg") repeat;
+  min-height: 500px;
+}
+.b-certificate {
+  padding: 68px 0;
+  background: url("../img/b-certificate.png") repeat;
+}
+.b-header {
+  padding: 35px 0 0;
+  height: 180px;
+  background: url("../img/b-header.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  border-bottom: 1px solid #d0cecc;
+}
+.b-promo {
+  height: 488px;
+  background: url("../img/b-promo.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.b-reviews {
+  min-height: 660px;
+  padding: 68px 0;
+  background: url("../img/b-reviews.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+.b-reviews__heading {
+  color: inherit;
+}
+.b-reviews__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 285px;
+}
+.b-reviews__item__info,
+.b-reviews__item__image {
+  margin: 0 0 15px;
+}
+.b-reviews__item__info {
+  font-style: italic;
+  font-size: 18px;
+  color: #cdcdcd;
+}
+.b-reviews__item__text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.b-steps {
+  min-height: 663px;
+  padding: 68px 0;
+  background: url("../img/b-steps.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.b-steps__heading {
+  color: inherit;
+}
+.b-steps__items {
+  background: url("../img/b-steps__items.png") no-repeat 50% 92px;
+}
+.b-steps__item {
+  display: inline-block;
+  vertical-align: top;
+}
+.b-steps__item + .b-steps__item {
+  margin-left: 24px;
+}
+.b-steps__item:nth-child(2n) {
+  margin-top: 128px;
+}
+.b-steps__item__text {
+  font-size: 25px;
+}
