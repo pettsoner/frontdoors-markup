@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!--[if IE]>
@@ -27,33 +28,53 @@
             <div class="b-header__logo">
                 <a href="#"><img src="img/b-header__logo.png" alt=""></a>
             </div>
+
+            <div class="b-header__stats">
+                <div class="b-header__stats__heading">Уже приобрели двери “Гранит”:</div>
+                <div class="b-header__stats__number">1</div>
+                <div class="b-header__stats__number">6</div>
+                <div class="b-header__stats__number">0</div>
+                <div class="b-header__stats__number">3</div>
+                <div class="b-header__stats__number">1</div>
+                <div class="b-header__stats__number">9</div>
+            </div>
+
+            <div class="b-header__contacts">
+                <div class="b-header__contacts__phone">8 (812) 748-17-52</div>
+
+                <div class="b-header__contacts__schedule">с 9-00 до 22-00</div>
+
+                <a href="" class="btn btn--order">заказать звонок</a>
+            </div>
         </div>
     </header>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     
-    <section class="b-promo">
+    <section class="b-promo shadow">
         <div class="container">
-                
-            <div class="b-promo__right">
-                <form class="b-form b-promo__form">
-                    <div class="b-form__heading heading">
-                        Получите<br><strong>бесплатную консультацию</strong><br><small>прямо сейчас</small>
-                    </div>
+            <div class="b-promo__headings">
+                <h1 class="b-promo__heading--one"><strong>Только у нас</strong><br><small>самый опытный консультант</small><br>по продажам дверей!</h1>
 
-                    <input type="text" class="input" placeholder="Представьтесь">
-                    <input type="text" class="input" placeholder="Ваш телефон или e-mail">
-
-                    <button class="btn btn--submit" type="submit">Получить консультацию</button>
-                </form>
+                <h2 class="b-promo__heading--two"><small>Покупайте напрямую у нас,</small><br>т.к. ВСЕ диллеры<br><strong>забирают двери<br>с нашего склада</strong></h2>
             </div>
-    
+                
+            <form class="b-form b-promo__form">
+                <div class="b-form__heading">
+                    Получите<br><strong>бесплатную консультацию</strong><br><small>прямо сейчас</small>
+                </div>
+
+                <input type="text" class="input" placeholder="Представьтесь">
+                <input type="text" class="input" placeholder="Ваш телефон или e-mail">
+
+                <button class="btn btn--submit" type="submit">Получить консультацию</button>
+            </form>    
         </div>
     </section>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     
-    <section class="b-advantages">
+    <section class="b-advantages shadow">
         <div class="container">
             <h2 class="heading--section b-advantages__heading">Почему стоит выбрать нас?</h2>
 
@@ -89,47 +110,68 @@
         <div class="container">   
             <h2 class="heading--section b-catalog__heading">Каталог продукции</h2>
 
-            <div class="b-catalog__items">
-                <div class="b-catalog__item b-product--mini">
-                    <div class="b-product__image"><a href="#"><img src="img/b-product--mini-1.jpg" alt=""></a></div>
+            <div class="b-catalog__item">
+                <div class="b-product-mini b-product">
+                    <img src="img/b-product-mini-1.jpg" alt="" class="b-product-mini__image">
 
                     <h3 class="b-product__name">Гранит Т1</h3>
 
-                    <div class="b-product__old-price">21 500 Р.</div>
+                    <div class="b-product__old-price">19 500 Р.</div>
 
                     <div class="b-product__price">19 500 Р.</div>
-                </div>
+                </div><!-- /.b-product-mini -->
 
-                <div class="b-catalog__item b-product--mini">
-                    <div class="b-product__image"><a href="#"><img src="img/b-product--mini-2.jpg" alt=""></a></div>
+                <div class="b-product-full b-product">
+                    <div class="b-product-full__preview">
+                        <img src="img/b-product-full-1-1.jpg" class="b-product-full__preview__current" alt="">
+                    </div>
 
-                    <h3 class="b-product__name">Гранит Т1</h3>
+                    <div class="b-product-full__main">
+                        <h3 class="b-product__name">Гранит Т1</h3>
 
-                    <div class="b-product__old-price">21 500 Р.</div>
+                        <ul class="b-product__list">
+                            <li class="b-product__list__item">
+                                <strong>Размер по коробу:</strong> 860х2050мм 960х2070мм
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Материал:</strong> холоднокатная сталь 2мм
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Панель снаружи:</strong> 10 мм, фрезерованная, цвет венге, без уголков
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Панель внутри:</strong> 6мм, гладкая, цвет венге
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Петли:</strong> подшипниковые
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Замок:</strong> KALE, сувальдный (3класс стойкости ко взлому)
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Замок:</strong> YALE-краб, цилиндровый (4 класс стойкости ко взлому) 
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Противосъемы:</strong> да
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Бронепласлпна:</strong> да(марганцевый сплав)
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Броненакладка:</strong> да 
+                            </li>
+                        </ul><!-- /.b-product__list -->
+                        
+                        <div class="b-product-full__main__bottom">
+                            <span class="b-product__old-price">19 500 Р.</span>
 
-                    <div class="b-product__price">19 500 Р.</div>
-                </div>
+                            <span class="b-product__price">19 500 Р.</span>
 
-                <div class="b-catalog__item b-product--mini">
-                    <div class="b-product__image"><a href="#"><img src="img/b-product--mini-3.jpg" alt=""></a></div>
-
-                    <h3 class="b-product__name">Гранит Т1</h3>
-
-                    <div class="b-product__old-price">21 500 Р.</div>
-
-                    <div class="b-product__price">19 500 Р.</div>
-                </div>
-
-                <div class="b-catalog__item b-product--mini">
-                    <div class="b-product__image"><a href="#"><img src="img/b-product--mini-4.jpg" alt=""></a></div>
-
-                    <h3 class="b-product__name">Гранит Т1</h3>
-
-                    <div class="b-product__old-price">21 500 Р.</div>
-
-                    <div class="b-product__price">19 500 Р.</div>
-                </div>
-            </div>
+                            <a href="#" class="btn btn--order b-product__order">Заказать</a>
+                        </div>
+                    </div><!-- /.b-product-full__main -->
+                </div><!-- /.b-product-full -->
+            </div><!-- /.b-catalog__item -->
         </div>
     </section>
 
@@ -146,7 +188,7 @@
                     <p class="b-steps__item__text">Выберите дверь</p>
                 </div>
 
-                <div class="b-steps__item">
+                <div class="b-steps__item even">
                     <img src="img/b-steps__item-2.png" alt="" class="b-steps__item__image">
 
                     <p class="b-steps__item__text">Позвоните нам,<br>или оставьте заявку</p>
@@ -158,7 +200,7 @@
                     <p class="b-steps__item__text">Наш замерщик<br>приедет к вам<br>в гости, рассчитает<br>и выпьет чаю</p>
                 </div>
 
-                <div class="b-steps__item">
+                <div class="b-steps__item even">
                     <img src="img/b-steps__item-4.png" alt="" class="b-steps__item__image">
 
                     <p class="b-steps__item__text">В течении 1 дня мы<br>доставии Вам дверь</p>
@@ -227,7 +269,7 @@
 
     <footer class="b-footer">
         <div class="container">
-            <h2 class="b-footer__heading heading">Готовы<br><strong>сделать заказ?</strong></h2>
+            <h2 class="b-footer__heading">Готовы<br><strong>сделать заказ?</strong></h2>
 
             <form class="b-form b-footer__form">
                 <input type="text" class="input" placeholder="Представьтесь">
@@ -236,13 +278,15 @@
                 <button class="btn btn--submit" type="submit">Вызвать замерщика</button>
             </form>
             
-            <h2 class="b-footer__heading heading">Вызовите замерщика!<br><small>И уже завтра вы получите</small><br><strong>новую дверь!</strong></h2>
+            <h2 class="b-footer__heading">Вызовите замерщика!<br><small>И уже завтра вы получите</small><br><strong>новую дверь!</strong></h2>
         </div>
     </footer>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/jquery.placeholder.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
