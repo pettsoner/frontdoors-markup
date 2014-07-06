@@ -216,7 +216,7 @@ img {
   content: '';
   width: 100%;
   height: 42px;
-  background: url("../img/shadow.png") no-repeat center center;
+  background: url("../img/shadow-bottom.png") no-repeat center center;
   position: absolute;
   bottom: -42px;
   left: 0;
@@ -257,14 +257,11 @@ img {
   padding: 65px 0;
   background: url("../img/b-catalog.jpg") repeat;
   min-height: 500px;
-  text-align: center;
 }
 .b-catalog__item {
   display: inline-block;
   vertical-align: top;
-}
-.b-catalog__item + .b-catalog__item {
-  margin-left: 100px;
+  margin: 0 49px 80px;
 }
 .b-certificate {
   padding: 68px 0;
@@ -286,7 +283,7 @@ img {
   color: #fff;
 }
 .b-footer__form {
-  margin: 35px 0;
+  margin: 25px 0;
 }
 .b-footer__heading {
   font-size: 46px;
@@ -302,6 +299,7 @@ img {
 .b-form--default {
   width: 355px;
   padding: 20px;
+  background: #000;
   background: rgba(0,0,0,0.65);
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -331,7 +329,9 @@ img {
   font-size: 24px;
 }
 .b-form--modal {
+  display: none;
   padding: 30px;
+  min-width: 650px;
   text-align: center;
 }
 .b-form--modal .b-form__heading {
@@ -563,7 +563,7 @@ img {
   content: '';
   width: 100%;
   height: 42px;
-  background: url("../img/shadow.png") no-repeat center center;
+  background: url("../img/shadow-bottom.png") no-repeat center center;
   position: absolute;
   bottom: -42px;
   left: 0;
@@ -615,6 +615,20 @@ img {
   background-size: cover;
   color: #fff;
   text-align: center;
+  position: relative;
+}
+.b-reviews:before {
+  content: '';
+  width: 100%;
+  height: 42px;
+  background: url("../img/shadow-top.png") no-repeat center center;
+  position: absolute;
+  top: -42px;
+  left: 0;
+  z-index: 100;
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
 }
 .b-reviews__heading {
   color: inherit;
@@ -647,6 +661,34 @@ img {
   background-size: cover;
   text-align: center;
   color: #fff;
+  position: relative;
+  position: relative;
+}
+.b-steps:before {
+  content: '';
+  width: 100%;
+  height: 42px;
+  background: url("../img/shadow-top.png") no-repeat center center;
+  position: absolute;
+  top: -42px;
+  left: 0;
+  z-index: 100;
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+}
+.b-steps:after {
+  content: '';
+  width: 100%;
+  height: 42px;
+  background: url("../img/shadow-bottom.png") no-repeat center center;
+  position: absolute;
+  bottom: -42px;
+  left: 0;
+  z-index: 100;
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
 }
 .b-steps__heading {
   color: inherit;
@@ -668,7 +710,10 @@ img {
   font: 25px Arial, sans-serif;
 }
 .b-thanks {
-  padding: 65px 40px 65px 158px;
+  display: none;
+  min-width: 650px;
+  padding: 65px 0;
+  padding-left: 158px;
   font-size: 31px;
   background: #fff url("../img/b-thanks.png") no-repeat 20px 50%;
   -webkit-border-radius: 5px;
