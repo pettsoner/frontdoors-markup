@@ -44,7 +44,7 @@
 
                 <div class="b-header__contacts__schedule">с 9-00 до 22-00</div>
 
-                <a href="" class="btn btn--order">заказать звонок</a>
+                <a href="" class="btn btn--order" form-modal>Заказать звонок</a>
             </div>
         </div>
     </header>
@@ -59,7 +59,7 @@
                 <h2 class="b-promo__heading--two"><small>Покупайте напрямую у нас,</small><br>т.к. ВСЕ диллеры<br><strong>забирают двери<br>с нашего склада</strong></h2>
             </div>
                 
-            <form class="b-form b-promo__form">
+            <form class="b-form b-form--default b-promo__form">
                 <div class="b-form__heading">
                     Получите<br><strong>бесплатную консультацию</strong><br><small>прямо сейчас</small>
                 </div>
@@ -111,8 +111,8 @@
             <h2 class="heading--section b-catalog__heading">Каталог продукции</h2>
 
             <div class="b-catalog__item">
-                <div class="b-product-mini b-product">
-                    <img src="img/b-product-mini-1.jpg" alt="" class="b-product-mini__image">
+                <div class="b-product-preview b-product">
+                    <img src="img/product-1-1.jpg" alt="" class="b-product-preview__image">
 
                     <h3 class="b-product__name">Гранит Т1</h3>
 
@@ -121,20 +121,18 @@
                     <div class="b-product__price">19 500 Р.</div>
                 </div><!-- /.b-product-mini -->
 
-                <div class="b-product-full b-product">
-                    <div class="b-product-full__preview">
-                        <img src="img/b-product-full-1-1.jpg" class="b-product-full__preview__current" alt="">
+                <div class="b-product-details b-product">
+                    <div class="b-product-details__images">
+                        <div class="b-product-details__images__current"><img alt=""></div>
 
-                        <ul class="b-product-full__preview__items">
-                            <li class="b-product-full__preview__item"><img src="img/b-product-full-1-1.jpg" alt=""></li>
+                        <ul class="b-product-details__images__items">
+                            <li class="b-product-details__images__item active"><img src="img/product-1-1.jpg" alt=""></li>
 
-                            <li class="b-product-full__preview__item"><img src="img/b-product-full-1-1.jpg" alt=""></li>
+                            <li class="b-product-details__images__item"><img src="img/product-1-2.jpg" alt=""></li>
+                        </ul><!-- /.b-product-details__images__items -->
+                    </div><!-- /.b-product-details__images -->
 
-                            <li class="b-product-full__preview__item"><img src="img/b-product-full-1-1.jpg" alt=""></li>
-                        </ul><!-- /.b-product-full__preview__items -->
-                    </div><!-- /.b-product-full__preview -->
-
-                    <div class="b-product-full__main">
+                    <div class="b-product-details__main">
                         <h3 class="b-product__name">Гранит Т1</h3>
 
                         <ul class="b-product__list">
@@ -170,13 +168,147 @@
                             </li>
                         </ul><!-- /.b-product__list -->
                         
-                        <div class="b-product-full__main__bottom">
+                        <div class="b-product-details__main__bottom">
                             <span class="b-product__old-price">19 500 Р.</span>
 
                             <span class="b-product__price">19 500 Р.</span>
 
                             <a href="#" class="btn btn--order b-product__order">Заказать</a>
-                        </div><!-- /.b-product-full__main__bottom
+                        </div><!-- /.b-product-details__main__bottom -->
+                    </div><!-- /.b-product-full__main -->
+                </div><!-- /.b-product-full -->
+            </div><!-- /.b-catalog__item -->
+
+            <div class="b-catalog__item">
+                <div class="b-product-preview b-product b-product--sticker">
+                    <img src="img/product-2-1.jpg" alt="" class="b-product-preview__image">
+
+                    <h3 class="b-product__name">Гранит Т2</h3>
+
+                    <div class="b-product__price">19 500 Р.</div>
+                </div><!-- /.b-product-mini -->
+
+                <div class="b-product-details b-product">
+                    <div class="b-product-details__images">
+                        <div class="b-product-details__images__current"><img alt=""></div>
+
+                        <ul class="b-product-details__images__items">
+                            <li class="b-product-details__images__item active"><img src="img/product-2-1.jpg" alt=""></li>
+
+                            <li class="b-product-details__images__item"><img src="img/product-2-1.jpg" alt=""></li>
+                        </ul><!-- /.b-product-details__images__items -->
+                    </div><!-- /.b-product-details__images -->
+
+                    <div class="b-product-details__main">
+                        <h3 class="b-product__name">Гранит Т2</h3>
+
+                        <ul class="b-product__list">
+                            <li class="b-product__list__item">
+                                <strong>Размер по коробу:</strong> 860х2050мм 960х2070мм
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Материал:</strong> холоднокатная сталь 2мм
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Панель снаружи:</strong> 10 мм, фрезерованная, цвет венге, без уголков
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Панель внутри:</strong> 6мм, гладкая, цвет венге
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Петли:</strong> подшипниковые
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Замок:</strong> KALE, сувальдный (3класс стойкости ко взлому)
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Замок:</strong> YALE-краб, цилиндровый (4 класс стойкости ко взлому) 
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Противосъемы:</strong> да
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Бронепласлпна:</strong> да(марганцевый сплав)
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Броненакладка:</strong> да 
+                            </li>
+                        </ul><!-- /.b-product__list -->
+                        
+                        <div class="b-product-details__main__bottom">
+                            <span class="b-product__price">19 500 Р.</span>
+
+                            <a href="#" class="btn btn--order b-product__order">Заказать</a>
+                        </div><!-- /.b-product-details__main__bottom -->
+                    </div><!-- /.b-product-full__main -->
+                </div><!-- /.b-product-full -->
+            </div><!-- /.b-catalog__item -->
+
+            <div class="b-catalog__item">
+                <div class="b-product-preview b-product b-product--sticker">
+                    <img src="img/product-3-1.jpg" alt="" class="b-product-preview__image">
+
+                    <h3 class="b-product__name">Гранит Т3</h3>
+
+                    <div class="b-product__old-price">19 500 Р.</div>
+
+                    <div class="b-product__price">19 500 Р.</div>
+                </div><!-- /.b-product-mini -->
+
+                <div class="b-product-details b-product">
+                    <div class="b-product-details__images">
+                        <div class="b-product-details__images__current"><img alt=""></div>
+
+                        <ul class="b-product-details__images__items">
+                            <li class="b-product-details__images__item active"><img src="img/product-3-1.jpg" alt=""></li>
+
+                            <li class="b-product-details__images__item"><img src="img/product-3-1.jpg" alt=""></li>
+                        </ul><!-- /.b-product-details__images__items -->
+                    </div><!-- /.b-product-details__images -->
+
+                    <div class="b-product-details__main">
+                        <h3 class="b-product__name">Гранит Т3</h3>
+
+                        <ul class="b-product__list">
+                            <li class="b-product__list__item">
+                                <strong>Размер по коробу:</strong> 860х2050мм 960х2070мм
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Материал:</strong> холоднокатная сталь 2мм
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Панель снаружи:</strong> 10 мм, фрезерованная, цвет венге, без уголков
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Панель внутри:</strong> 6мм, гладкая, цвет венге
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Петли:</strong> подшипниковые
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Замок:</strong> KALE, сувальдный (3класс стойкости ко взлому)
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Замок:</strong> YALE-краб, цилиндровый (4 класс стойкости ко взлому) 
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Противосъемы:</strong> да
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Бронепласлпна:</strong> да(марганцевый сплав)
+                            </li>
+                            <li class="b-product__list__item">
+                                <strong>Броненакладка:</strong> да 
+                            </li>
+                        </ul><!-- /.b-product__list -->
+                        
+                        <div class="b-product-details__main__bottom">
+                            <span class="b-product__old-price">19 500 Р.</span>
+
+                            <span class="b-product__price">19 500 Р.</span>
+
+                            <a href="#" class="btn btn--order b-product__order">Заказать</a>
+                        </div><!-- /.b-product-details__main__bottom -->
                     </div><!-- /.b-product-full__main -->
                 </div><!-- /.b-product-full -->
             </div><!-- /.b-catalog__item -->
@@ -279,7 +411,7 @@
         <div class="container">
             <h2 class="b-footer__heading">Готовы<br><strong>сделать заказ?</strong></h2>
 
-            <form class="b-form b-footer__form">
+            <form class="b-form b-form--default b-footer__form">
                 <input type="text" class="input" placeholder="Представьтесь">
                 <input type="text" class="input" placeholder="Ваш телефон или e-mail">
 
@@ -289,6 +421,21 @@
             <h2 class="b-footer__heading">Вызовите замерщика!<br><small>И уже завтра вы получите</small><br><strong>новую дверь!</strong></h2>
         </div>
     </footer>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    
+    <form class="b-form b-form--modal">
+        <h2 class="b-form__heading">Оставьте ваши данные и наш менеджер<br>свяжется с вами в ближайшее время</h2>
+
+        <input type="text" class="input" placeholder="Ваше имя">
+        <input type="text" class="input" placeholder="Телефон или e-mail">
+
+        <button class="btn btn--submit" type="submit">Отправить</button>
+    </form>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <div class="b-thanks">Спасибо, Ваша заявка принята!</div>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
